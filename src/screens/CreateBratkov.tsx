@@ -31,12 +31,6 @@ export function CreateBratkov(){
       }
 
     }
-   /* useEffect(() => {
-      
-      setResultBratki([...sortBratki(searchName === '' ? bratki : bratki.filter(bratok=>bratok.name.includes(searchName)))])
-    },[bratki, searchName, sortType])*/
-    
-   
 
     useEffect(()=>{
         if(bratok.name.length<3 && bratok.name.length !== 0){ 
@@ -206,9 +200,3 @@ const Add = styled.button`
     background-position: right center;
   }
 `
-
-
-function addData() {
-  throw new Error("Function not implemented.");
-}
-
